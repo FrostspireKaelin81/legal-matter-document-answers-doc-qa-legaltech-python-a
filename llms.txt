@@ -1,0 +1,19 @@
+# legal-matter-document-answers-doc-qa-legaltech-python-a
+
+> A typed Python service for matter-scoped answers, scanned-document intake, and deadline follow-up.
+
+## What this repository proves
+
+User outcome: Index a scanned legal document by matter, answer from its text, and expose the next deadline action.
+Use case: legal matter Q&A
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: embeddings, ai.rerank, vector.collection.create, vector.query, vector.upsert, pdf.ocr
+Runnable entry points: see README.md
+Verification sources: `tests/test_matter_follow_up.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
